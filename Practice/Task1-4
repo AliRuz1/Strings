@@ -1,0 +1,15 @@
+public class Str4 {
+    public static void main(String[] args) {
+        String s = "Hello 32 peoples with 64 hands and 100 genders)x";
+        String[] sarr = s.split(" ");
+        int count = 0;
+        for(String str : sarr) {
+            try {
+                Integer.parseInt(str);
+            } catch(NumberFormatException e) {
+                count++;
+            }
+        }
+        System.out.println(sarr.length - count);
+    }
+}
