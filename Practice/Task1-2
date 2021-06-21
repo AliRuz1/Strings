@@ -1,0 +1,22 @@
+public class Str2 {
+        public static String wordtoletter(String str){
+            String result = "";
+            String word1 = "word";
+            String word2 = "letter";
+            for(int i = 1; i<str.length();i++){
+                char ch = str.charAt(i);
+                if(str.contains("word")){
+                    result = str.replace(word1,word2);
+                }
+                else {
+                    result = result + ch;
+                }
+            }
+
+            return result;
+    }
+    public static void main(String[] args){
+        String str = "one_word_2_word_three_word";
+        System.out.print(wordtoletter(str));
+    }
+}
