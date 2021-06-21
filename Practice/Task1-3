@@ -1,0 +1,7 @@
+public class Str3 {
+    public static void main(String[] args){
+        String str = "Hello my 2 friends and 20 relatives and 9 peoples";
+        int count = (int) str.codePoints().filter(Character :: isDigit).count();
+        System.out.println(count);
+    }
+}
