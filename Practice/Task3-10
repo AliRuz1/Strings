@@ -1,0 +1,21 @@
+import java.util.Scanner;
+import java.util.regex.*;
+
+public class Str10
+{
+    public static void main (String[] args)
+    {
+        String str;
+        int count = 0;
+        Pattern pattern = Pattern.compile("[.!?]+");
+        Matcher matcher;
+        Scanner scanner = new Scanner(System.in);
+
+        str = scanner.nextLine();
+        matcher = pattern.matcher(str);
+
+        while (matcher.find()) count++;
+
+        System.out.println(count);
+    }
+}
