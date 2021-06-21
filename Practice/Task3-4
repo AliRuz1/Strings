@@ -1,0 +1,14 @@
+public class Str4 {
+
+    private static String tort (String word) {
+        String str1 = String.valueOf(word.charAt(word.indexOf('т')));
+        str1 += String.valueOf(word.charAt(word.indexOf('о')));
+        str1 += String.valueOf(word.charAt(word.indexOf('р')));
+        str1 += String.valueOf(word.charAt(word.indexOf('т')));
+        return str1;
+    }
+    public static void main(String[] args){
+        String str = "информатика";
+        System.out.println(tort(str));
+    }
+}
