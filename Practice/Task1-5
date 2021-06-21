@@ -1,0 +1,11 @@
+import java.lang.String;
+import java.util.regex.Pattern;
+
+
+public class Str5 {
+    public static void main(String[] args){
+        //String str = "     hi     boys 222 and   zyabls    ";
+        String str = "  666   6666  t5t5t5    ";
+        System.out.println(str.replaceAll("\\s+"," ").trim());
+    }
+}
