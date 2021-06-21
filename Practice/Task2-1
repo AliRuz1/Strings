@@ -1,0 +1,15 @@
+public class Str1 {
+    public static void main(String[] args){
+            String str = " ggt    gtg t g t g     gtgt g   gtgtg   gt";
+            int max = 0;
+            int maxx = 0;
+            for (char c : str.toCharArray()){
+                if(c == ' '){
+                    maxx++;
+                    if(maxx > max) max = maxx;
+                }
+                else maxx = 0;
+            }
+        System.out.println(max);
+    }
+}
