@@ -1,0 +1,11 @@
+import java.io.IOException;
+
+public class Str2 {
+        public static void main(String[] args) throws IOException {
+            String str = "append a new method to back to the braa";
+            String pattern = "a";
+            String p = "ab";
+            String result = str.replaceAll(pattern,p);
+            System.out.println(result);
+        }
+    }
